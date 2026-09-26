@@ -38,6 +38,7 @@ function App() {
           </div>
 
             {sidebarToggle ?
+            <div >
                <ul class='sideBarLink'>
                 <li><span onClick={()=>{setsidebarToggle(false)}}><VscChromeClose size={30}/></span></li>
                 <l1><a href = "#">About</a></l1>
@@ -46,7 +47,7 @@ function App() {
                 <l1><a  href = "#">Login</a></l1>
                 <l1><a  href = "#">Signup</a></l1>
             </ul>
-
+          </div>
             :
 
             ""
