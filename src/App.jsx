@@ -30,7 +30,7 @@ function App() {
          {/* logo */}
          <div class = "logoCon">
             <IoLogoAngular size={50} />
-            <h1>Mah website</h1>
+            <h1>website</h1>
          </div>
 
 
@@ -38,7 +38,6 @@ function App() {
                 <a href = "#">About</a>
                 <a  href = "#">Features</a>
                 <a  href = "#">Community</a>
-                <h1>hello</h1>
             </nav>
 
              <div class = "headerbtnCon">
@@ -49,21 +48,18 @@ function App() {
             <button>SIGNUP</button>
           </div>
 
-            {sidebarToggle ?
-            <div >
-               <nav class='sideBarLink'>
-                <span onClick={()=>{setsidebarToggle(false)}}><VscChromeClose size={30}/></span>
+       
+        
+          <nav class={`sideBarLink ${sidebarToggle ? "openSidebar": ""}`}>
+            <span onClick={()=>{setsidebarToggle(false)}}><VscChromeClose size={30}/></span>
                 <a href = "#">About</a>
                 <a  href = "#">Features</a>
                 <a  href = "#">Community</a>
                 <a  href = "#">Login</a>
                 <a  href = "#">Signup</a>
             </nav>
-          </div>
-            :
-
-            ""
-           }
+          
+            
            
 
          </div>

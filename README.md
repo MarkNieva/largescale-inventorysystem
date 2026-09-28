@@ -1,20 +1,18 @@
-<<<<<<< HEAD
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+Hey its me. Addictedmark69 (Also known as *see github Profile)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Take note that the project is created through 80% mind-effort and 20% ai-generated.
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Im trying my best to stop relying more on AI. My Goal is to code professionally and also know how to read and write codes. Everything i do, I work on independently not everyone else specially clankers
 
-## Expanding the ESLint configuration
+Even though the project is still currently in development. Id be appreciate it to check it out for a while (0_0). Im open to constructive criticism . As part of my workflow improvement. 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# largescale-inventorysystem
->>>>>>> 20c183ea54da1988c73e9e112b229cf1075b2ddb
+
+
+Thanks 
+
+
+
+
