@@ -1,4 +1,4 @@
-import { useContext,useState,Suspense  } from "react";
+import { useContext,useState  } from "react";
 import { MyContext } from "./components/MyContext";
 import './App.css'
 import WebController from './components/WebController'
@@ -26,12 +26,12 @@ function App() {
   //loading
 
    const [showStartup, setShowStartup] = useState(true);
-  const [isAppReady, setIsAppReady] = useState(false);
+  // const [isAppReady, setIsAppReady] = useState(false);
 
     // Handle startup completion
   const handleStartupComplete = () => {
     setShowStartup(false);
-    setIsAppReady(true);
+    // setIsAppReady(true);
   };
 
   
