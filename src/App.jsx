@@ -1,7 +1,9 @@
-import { useContext } from "react";
+import { useContext,useState,Suspense  } from "react";
 import { MyContext } from "./components/MyContext";
 import './App.css'
 import WebController from './components/WebController'
+
+import StartupAnimation from "./components/loadingscreen/StartupAnimation";
 
 import { VscChromeClose } from "react-icons/vsc";
 import { FiAlignJustify } from "react-icons/fi";
@@ -21,12 +23,53 @@ function App() {
   const {sidebarToggle,setsidebarToggle} = useContext(MyContext);
 
 
+  //loading
+
+   const [showStartup, setShowStartup] = useState(true);
+  const [isAppReady, setIsAppReady] = useState(false);
+
+    // Handle startup completion
+  const handleStartupComplete = () => {
+    setShowStartup(false);
+    setIsAppReady(true);
+  };
+
+  
+//   const LoadingFallback = () => (
+//   <div style={{
+//     display: 'flex',
+//     justifyContent: 'center',
+//     alignItems: 'center',
+//     height: '100vh',
+//     backgroundColor: '#f5f5f5'
+//   }}>
+//     <div style={{
+//       width: '50px',
+//       height: '50px',
+//       border: '5px solid #f3f3f3',
+//       borderTop: '5px solid #3498db',
+//       borderRadius: '50%',
+//       animation: 'spin 1s linear infinite'
+//     }} />
+//     <style>{`
+//       @keyframes spin {
+//         0% { transform: rotate(0deg); }
+//         100% { transform: rotate(360deg); }
+//       }
+//     `}</style>
+//     <h1>Fetching up</h1>
+//   </div>
+// );
+
   return (
+
     
     <body>
 
-    {/* header */}
+  {showStartup && <StartupAnimation onComplete={handleStartupComplete} />}
 
+
+    {/* header */}
    {headerToggle ?
      <header>
 
@@ -76,6 +119,8 @@ function App() {
         :
         <></>
  }
+
+
 
 
     <WebController/>

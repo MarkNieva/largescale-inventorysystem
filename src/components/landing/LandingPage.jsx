@@ -8,7 +8,6 @@ const LandingPage=()=>{
         <>
 
         <h1>Hello World</h1>
-        
         </>
     )
 
