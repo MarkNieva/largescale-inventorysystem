@@ -38,6 +38,7 @@ function App() {
                 <a href = "#">About</a>
                 <a  href = "#">Features</a>
                 <a  href = "#">Community</a>
+                <h1>hello</h1>
             </nav>
 
              <div class = "headerbtnCon">
