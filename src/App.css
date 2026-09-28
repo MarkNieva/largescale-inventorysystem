@@ -3,10 +3,9 @@
   margin: 0;
 }
 
-.backgroundGeneral{
-  
+body{
+  background-color: rgb(231, 231, 231);
 }
-
 header{
   display: flex;
   width: 100%;
@@ -67,25 +66,48 @@ header{
   list-style: none;
   display: flex;
   flex-direction: column;
-  padding: 40px;
-  row-gap: 80px;
+  padding: 50px;
+  row-gap: 60px;
   top:0;
   right: 0;
   height: 100vh;
   width: 250px;
   z-index:999; 
-   overflow-y: auto;
-  background-color: aqua;
+  background-color: white;
+  border-left: 1px solid black;
   box-shadow: -5px 0 4px rgba(0,0,0,0.25);
  transform: translateX(100%);
   visibility: hidden;
   transition: transform 0.75s ease;
 }
 
+.sideBarLink nav{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  row-gap: 50px;
+    width: 190px;
+  /* border: 1px solid black; */
+overflow-y: auto;
+}
+
+.sideBarLink nav button{
+display: flex;
+background: none;
+border:1px solid rgb(209, 192, 192);
+padding: 15px;
+border-radius: 20px;
+column-gap: 30px;
+}
+
+   
 .openSidebar{
   transform: translateX(0);
   visibility: visible;
 }
+
+
 
 
 
@@ -99,7 +121,6 @@ header{
 }
 
 .headerbtnCon{
-  /* border: 1px solid black; */
   justify-content: center;
   align-items: center;
   padding: 10px;
