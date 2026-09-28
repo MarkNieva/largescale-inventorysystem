@@ -9,13 +9,17 @@ export function MyProvider({ children }) {
 
   const [headerToggle,setheaderToggle]=useState(true);
   
-  const [sidebarToggle,setsidebarToggle]=useState(true);
+  const [sidebarToggle,setsidebarToggle]=useState(false);
+
+  //profile active
+  const [profileActive,setprofileActive]=useState({});
 
   return (
     <MyContext.Provider value={{ 
       value, setValue,
       headerToggle,setheaderToggle,
-      sidebarToggle,setsidebarToggle
+      sidebarToggle,setsidebarToggle,
+      profileActive,setprofileActive
 
     }}>
       {children}

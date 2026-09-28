@@ -3,11 +3,16 @@
   margin: 0;
 }
 
+.backgroundGeneral{
+  
+}
+
 header{
   display: flex;
   width: 100%;
+  padding: 10px;
   max-width: 1873px;
- border: 1px solid black;
+ /* border: 1px solid black; */
 }
 
  .headerCon{
@@ -19,14 +24,30 @@ header{
   align-items: center;
   justify-content: space-between;  
   height: 40px;
+  border-radius: 20px;
+  background-color: white;
   border: 1px solid black;
 } 
+
+.logoCon{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  column-gap: 20px;
+
+}
+.logoCon h1{
+  background: transparent;
+}
+
 
 
 .headerLink{
   display: flex;
   column-gap: 120px;
   padding: 10px;
+  background-color: white;
 }
 
 
@@ -36,7 +57,8 @@ header{
 .headerLink a{
   font-size: 20px;
   color: black;
-   text-decoration: none;
+  background: transparent;
+  text-decoration: none;
 }
 
 
@@ -52,6 +74,7 @@ header{
   height: 100vh;
   width: 250px;
   z-index:999;
+   overflow-y: auto;
   background-color: aqua;
 }
 
@@ -60,18 +83,20 @@ header{
 
 
 .sideBarLink a{
-  font-size: 30px;
+  font-size: 20px;
+  font-weight: bold;
   color: black;
    text-decoration: none;
 }
 
 .headerbtnCon{
-  border: 1px solid black;
+  /* border: 1px solid black; */
   justify-content: center;
   align-items: center;
   padding: 10px;
   display: flex;
   column-gap: 20px;
+     background-color: white;
 }
 
 .headerbtnCon button{
@@ -79,11 +104,37 @@ header{
   border-radius: 20px;
   padding: 10px;
   width: 90px;
+  background-color: white;
+  border: 1px solid black;
+}
 
+.headerbtnCon button:hover{
+  background-color: rgb(221, 213, 213);
+}
+
+
+.headerbtnCon .menuBtn{
+  display: none;
+}
+
+
+@media (max-width: 936px) {
+
+  .headerLink{
+    display: none;
+  }
+
+  .headerbtnCon .menuBtn{
+  display: block;
+}
+
+.headerbtnCon button{
+  display: none;
 }
 
 
 
+}
 
 
 

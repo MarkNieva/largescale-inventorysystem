@@ -4,6 +4,9 @@ import './App.css'
 import WebController from './components/WebController'
 
 import { VscChromeClose } from "react-icons/vsc";
+import { FiAlignJustify } from "react-icons/fi";
+import { IoLogoAngular } from "react-icons/io";
+
 function App() {
  
   // const { value, setValue } = useContext(MyContext);
@@ -24,29 +27,37 @@ function App() {
 
       <div class = "headerCon">
 
-            <h1>LOGO NAME</h1>
+         {/* logo */}
+         <div class = "logoCon">
+            <IoLogoAngular size={50} />
+            <h1>Mah website</h1>
+         </div>
 
-            <ol class='headerLink'>
-                <l1><a href = "#">About</a></l1>
-                <l1><a  href = "#">Features</a></l1>
-                <l1><a  href = "#">Community</a></l1>
-            </ol>
+
+            <nav class='headerLink'>
+                <a href = "#">About</a>
+                <a  href = "#">Features</a>
+                <a  href = "#">Community</a>
+            </nav>
 
              <div class = "headerbtnCon">
+            <button class = "menuBtn" 
+            onClick={()=>{setsidebarToggle(true)}}
+            ><FiAlignJustify size={30}/></button>
             <button>LOGIN</button>
             <button>SIGNUP</button>
           </div>
 
             {sidebarToggle ?
             <div >
-               <ul class='sideBarLink'>
-                <li><span onClick={()=>{setsidebarToggle(false)}}><VscChromeClose size={30}/></span></li>
-                <l1><a href = "#">About</a></l1>
-                <l1><a  href = "#">Features</a></l1>
-                <l1><a  href = "#">Community</a></l1>
-                <l1><a  href = "#">Login</a></l1>
-                <l1><a  href = "#">Signup</a></l1>
-            </ul>
+               <nav class='sideBarLink'>
+                <span onClick={()=>{setsidebarToggle(false)}}><VscChromeClose size={30}/></span>
+                <a href = "#">About</a>
+                <a  href = "#">Features</a>
+                <a  href = "#">Community</a>
+                <a  href = "#">Login</a>
+                <a  href = "#">Signup</a>
+            </nav>
           </div>
             :
 
