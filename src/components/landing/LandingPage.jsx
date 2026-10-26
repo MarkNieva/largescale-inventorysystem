@@ -1,4 +1,4 @@
-
+import LandingPageSt from '../landing/LandingPageSt.module.css';
 
 
 const LandingPage=()=>{
@@ -7,7 +7,19 @@ const LandingPage=()=>{
     return(
         <>
 
-        <h1>Hello World</h1>
+      <div className={LandingPageSt.container}>
+
+        <div className={LandingPageSt.pageinfo}>
+
+
+        </div>
+
+        <div className={LandingPageSt.image}>
+
+
+        </div>
+
+      </div>
         </>
     )
 
