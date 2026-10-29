@@ -78,7 +78,7 @@ function App() {
          {/* logo */}
          <div class = "logoCon">
             <IoLogoAngular size={50} />
-            <h1>website</h1>
+            <h2>website</h2>
          </div>
 
 

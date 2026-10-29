@@ -4,7 +4,7 @@
 }
 
 body{
-  background-color: rgb(231, 231, 231);
+  background-color: white;
   padding: 25px 35px;  
 }
 header{
@@ -15,6 +15,13 @@ header{
  /* border: 1px solid black; */
 }
 
+h1{
+  font-size: 70px;
+}
+
+
+
+
  .headerCon{
   display: flex;
   width: 100%;
@@ -24,7 +31,7 @@ header{
   align-items: center;
   justify-content: space-between;  
   height: 40px;
-  border-radius: 20px;
+  border-radius: 10px;
   background-color: white;
   border: 1px solid black;
 } 
@@ -37,8 +44,9 @@ header{
   column-gap: 20px;
 
 }
-.logoCon h1{
+.logoCon h2{
   background: transparent;
+  font-size: 30px;
 }
 
 
@@ -93,17 +101,18 @@ header{
   padding: 10px;
   row-gap: 50px;
     width: 190px;
-  /* border: 1px solid black; */
 overflow-y: auto;
 }
 
 .sideBarLink nav button{
-display: flex;
-background: none;
-border:1px solid rgb(209, 192, 192);
-padding: 15px;
-border-radius: 20px;
-column-gap: 30px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: none;
+  border: 1px solid rgb(209, 192, 192);
+  padding: 15px;
+  border-radius: 20px;
+  column-gap: 30px;
 }
 
 

@@ -1,24 +1,100 @@
-
-
-.container{
-
+.container {
     width: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
+    padding-top: 40px;
+    box-sizing: border-box;
 }
 
-.pageinfo{
-
-    width: 50%;
-    height: 500px;
-    border: 1px solid blue;
+.pageinfo {
+    box-sizing: border-box;
+    width: 40%;
+    min-height: 500px;            
+    /* border: 1px solid blue; */
+    padding: clamp(16px, 3vw, 40px);
+    display: flex;
+    flex-direction: column;
+    row-gap: clamp(16px, 2.5vw, 30px);
+    min-width: 0;                
 }
 
+.pageinfo h1 {
+    font-size: clamp(1.75rem, 4vw, 3.5rem);
+    line-height: 1.1;
+    overflow-wrap: anywhere;
+}
 
+.pageinfo button {
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    font-size: clamp(0.9rem, 1.4vw, 1.1rem);
+}
 
-.image{
+.pageinfo a {
+    font-size: clamp(1rem, 1.8vw, 2rem);  
+    line-height: 1.4;
+    overflow-wrap: anywhere;  
+      font-family: "Poppins", Arial, sans-serif;         
+}
 
-    width: 50%;
-    height: 500px;
-    border: 1px solid red;
+.infocountCon {
+    display: flex;
+    flex-wrap: wrap;                     
+    gap: clamp(20px, 5vw, 50px);         
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+.infocount {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(10px, 1.5vw, 20px);
+}
+
+.infocount div {
+    min-width: 100px;                    
+    padding: 5px 10px;
+    text-align: center;
+    background-color: rgb(151, 41, 151);
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.imageCon {
+    box-sizing: border-box;
+    width: 60%;
+    min-height: 500px;
+    display: flex;             
+    align-items: center;       
+    justify-content: center;    
+    /* border: 1px solid red; */
+}
+
+.imageCon img{
+     max-width: 100%;            
+    max-height: 100%;           
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .pageinfo,
+    .image {
+        width: 100%;
+    }
+
+    .pageinfo {
+        min-height: auto;
+    }
+
+    .image {
+        min-height: 250px;
+    }
 }
