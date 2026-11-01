@@ -22,7 +22,7 @@ const LandingPage=()=>{
         <div className={LandingPageSt.pageinfo}>
           <button>Start Sorting</button>
           <h1>LARGESCALE INVENTORY SYSTEM</h1>
-          <a>Track thousands of products across every warehouse, get real-time stock updates, and never run out of what matters.</a>
+          <a>Track thousands of products across every warehouse, get real-time stock updates, and never run out of what matters...</a>
 
           <hr/>
 
