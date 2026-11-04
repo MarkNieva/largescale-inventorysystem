@@ -1,0 +1,194 @@
+/* header{
+  display: flex;
+  width: 100%;
+  max-width: 1873px;
+}
+
+h1{
+  font-size: 70px;
+} */
+
+
+header{
+  display: flex;
+  width: 100%;
+  padding: 25px;
+  max-width: 1873px;
+  z-index: 200;
+    position: fixed;
+
+}
+
+
+ .headerCon{
+  display: flex;
+  width: 100%;
+  max-width: 1200px; 
+  margin: 0 auto;          
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;  
+  height: 40px;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid black;
+
+
+} 
+
+.logoCon{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  column-gap: 20px;
+
+}
+.logoCon h2{
+  background: transparent;
+  font-size: 30px;
+}
+
+
+
+.headerLink{
+  display: flex;
+  column-gap: 120px;
+  padding: 10px;
+  background-color: white;
+}
+
+
+
+
+
+.headerLink a{
+  font-size: 20px;
+  color: black;
+  background: transparent;
+  text-decoration: none;
+}
+
+.headerLink a:hover{
+    text-decoration-line: underline;
+}
+
+
+.sideBarLink{
+  position: fixed;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  row-gap: 60px;
+  top:0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index:999; 
+  background-color: white;
+  border-left: 1px solid black;
+  box-shadow: -5px 0 4px rgba(0,0,0,0.25);
+ transform: translateX(100%);
+  visibility: hidden;
+  transition: transform 0.75s ease;
+}
+
+.sideBarLink nav{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  row-gap: 50px;
+    width: 190px;
+overflow-y: auto;
+}
+
+.sideBarLink nav button{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: none;
+  border: 1px solid rgb(209, 192, 192);
+  padding: 15px;
+  border-radius: 20px;
+  column-gap: 30px;
+}
+
+
+   
+.openSidebar{
+  transform: translateX(0);
+  visibility: visible;
+}
+
+
+
+
+
+
+
+.sideBarLink a{
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+   text-decoration: none;
+}
+
+.headerbtnCon{
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  display: flex;
+  column-gap: 20px;
+     background-color: white;
+}
+
+.headerbtnCon button{
+  border-width: 2px;
+  border-radius: 20px;
+  padding: 10px;
+  width: 90px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.headerbtnCon button:last-child{
+  background-color: black;
+  color: white;
+}
+
+.headerbtnCon button:hover{
+  background-color: rgb(221, 213, 213);
+}
+
+
+.headerbtnCon .menuBtn{
+  display: none;
+}
+
+
+
+
+
+@media (max-width: 936px) {
+
+  header{
+    padding: 12px 12px 12px 0px;
+  }
+
+  .headerLink{
+    display: none;
+  }
+
+  .headerbtnCon .menuBtn{
+  display: block;
+}
+
+.headerbtnCon button{
+  display: none;
+}
+
+
+
+}

@@ -1,8 +1,7 @@
 .container {
     width: 100%;
-    /* border: 1px solid black; */
     display: flex;
-    padding-top: 40px;
+    padding-top: 140px;
     box-sizing: border-box;
 }
 
@@ -71,7 +70,6 @@
     display: flex;             
     align-items: center;       
     justify-content: center;    
-    /* border: 1px solid red; */
 }
 
 .imageCon img{
