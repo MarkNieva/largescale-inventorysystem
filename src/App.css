@@ -6,6 +6,11 @@
 body{
   background-color: white;
   padding: 25px 35px;  
+
+  background-image: url('./assets/landingpage_bg.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 header{
   display: flex;
