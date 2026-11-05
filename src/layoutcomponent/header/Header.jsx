@@ -46,6 +46,15 @@ const Header=()=>{
 
       
 
+        
+          
+            
+           
+
+         </div>
+
+        </header>
+
           <div className={`${HeaderSt.sideBarLink} ${ sidebarToggle ? HeaderSt.openSidebar: ""}`}>
             <span onClick={()=>{setsidebarToggle(false)}}><VscChromeClose size={30}/></span>
             
@@ -58,13 +67,8 @@ const Header=()=>{
               </nav>
 
             </div>
-          
-            
-           
 
-         </div>
-
-        </header>
+        
 
         </>
     )

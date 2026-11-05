@@ -14,8 +14,7 @@ footer{
 
     width: 100%;
     height: auto;
-    /* border: 1px solid blue; */
-    background-color: #DDF8EC;
+    background-color: #C5F2DF;
 }
 
 .generalCon{
@@ -55,6 +54,10 @@ footer{
  display: flex;
  flex-direction: column;
  row-gap: 20px;
+ }
+
+ .quicklinks a:hover, .inventory a:hover{
+      text-decoration-line: underline;
  }
 
 
@@ -122,65 +125,55 @@ footer{
 
 .copyrightCon{
     width: 100%;
-    height: 60px;
-    border: 1px solid black;
+
+    height: 30px;
+    background: linear-gradient(
+    120deg,
+    #69c59d 100%,
+    #94e5c1 50%,
+    #69c59d 100%
+   );
+
+   padding-top: 20px;
+    padding-bottom: 20px;
+   display: flex;
+  align-items: center;
+  justify-content: space-between;  
+}
+
+.copyrightCon a:first-child{
+    margin-left: 30px;
+}
+
+.copyrightCon a:last-child{
+    margin-right: 30px;
 }
 
 @media (max-width: 936px) {
 
-    footer{
 
-        max-width: 90%;
-         border: 1px solid black;
-         
-
-    }
-
-    /* .container{
-
-          max-width: 350px;
-          border: 1px solid black;
-    } */
     .generalCon{
         display: flex;
         flex-direction: column;
+        padding: 20px;
+    
     }
 
     .infoCon{
        display: flex;
         flex-direction: column;
-        row-gap: 220px; 
+        row-gap: 200px; 
+        padding: 0px;
         justify-content: center;
     }
 
     
 
-    .socials{
-    width: 80%;
-    border: 1px solid black;
-    }
-   .quicklinks{
-     width: 80%;
-       border: 1px solid black;
 
-   }
-
-   .inventory{
+    .socials, .quicklinks, .inventory, .contact{
       width: 80%;
-       border: 1px solid black;
-
-   }
-
-   .contact{
-    width: 80%;
-     border: 1px solid black;
-
-   }
-
-
-    .logoCon h2{
-   
     }
+
 
 
 }
