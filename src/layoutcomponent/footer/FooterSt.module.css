@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap');
 
 
 footer{
@@ -7,6 +7,7 @@ footer{
   width: 100%;
   /* max-width: 1904px; */
   height: auto;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.15);
 }
 
 .container{
@@ -20,7 +21,7 @@ footer{
 .generalCon{
 
     display: flex;
-   
+      
 }
 .infoCon{
     width: 100%;
@@ -29,18 +30,91 @@ footer{
     padding: 20px;
 }
 
+.infoCon h2{
+    font-size: 35px;
+}
+
+
+.infoCon hr{
+ 
+   width: 90px;
+    border-width: 4px;
+}
+
+/* padding per section */
+.socials, .quicklinks, .inventory, .contact{
+    padding-left: 15px;
+      padding-right: 15px;
+       font-size: 20px;
+    font-weight: 400;
+}
+
+/* border green */
+ .quicklinks, .inventory, .contact{
+ border-left: 2px solid green;
+ display: flex;
+ flex-direction: column;
+ row-gap: 20px;
+ }
+
+
+
+
+/* socials */
 .socials{
-    width: 25%;
-    background-color: black;
+    width: 29%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    /* border: 1px solid green; */
+
+}
+
+.logoCon{
+      display: flex;
+  text-align: center;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.logoCon h2{
+  font-size: 30px;
+}
+
+
+
+/* quicklinks */
+
+.quicklinks{
+    width: 21%;
     height: 300px;
 }
 
+
+
+
+/* inventory */
+
+.inventory{
+    width: 21%;
+    height: 300px;
+}
+
+/* contact */
+
+.contact{
+    width: 29%;
+    height: 300px;
+}
+
+
+
 .gradientwarehouse{
-    width: 20%;
+    width: 18%;
     height: 340px;
      z-index: 0;
-      /* position: absolute;
-      left: 200px; */
+
  opacity: 0.6;
 }
 
@@ -50,4 +124,63 @@ footer{
     width: 100%;
     height: 60px;
     border: 1px solid black;
+}
+
+@media (max-width: 936px) {
+
+    footer{
+
+        max-width: 90%;
+         border: 1px solid black;
+         
+
+    }
+
+    /* .container{
+
+          max-width: 350px;
+          border: 1px solid black;
+    } */
+    .generalCon{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .infoCon{
+       display: flex;
+        flex-direction: column;
+        row-gap: 220px; 
+        justify-content: center;
+    }
+
+    
+
+    .socials{
+    width: 80%;
+    border: 1px solid black;
+    }
+   .quicklinks{
+     width: 80%;
+       border: 1px solid black;
+
+   }
+
+   .inventory{
+      width: 80%;
+       border: 1px solid black;
+
+   }
+
+   .contact{
+    width: 80%;
+     border: 1px solid black;
+
+   }
+
+
+    .logoCon h2{
+   
+    }
+
+
 }

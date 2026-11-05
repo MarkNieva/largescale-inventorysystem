@@ -8,6 +8,7 @@ import StartupAnimation from "./components/loadingscreen/StartupAnimation";
 import Footer from './layoutcomponent/footer/Footer.jsx'
 import Header from './layoutcomponent/header/Header.jsx'
 
+
 function App() {
  
   // const { value, setValue } = useContext(MyContext);

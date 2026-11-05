@@ -23,7 +23,7 @@ header{
  .headerCon{
   display: flex;
   width: 100%;
-  max-width: 1200px; 
+  max-width: 1100px; 
   margin: 0 auto;          
   padding: 20px;
   align-items: center;
@@ -64,9 +64,6 @@ header{
 
 .headerLink a{
   font-size: 20px;
-  color: black;
-  background: transparent;
-  text-decoration: none;
 }
 
 .headerLink a:hover{
@@ -174,7 +171,10 @@ overflow-y: auto;
 @media (max-width: 936px) {
 
   header{
-    padding: 12px 12px 12px 0px;
+    padding: 10px;
+    padding-top: 50px;
+      max-width: 84%;
+      border: 1px solid black;
   }
 
   .headerLink{

@@ -36,8 +36,7 @@
 .pageinfo a {
     font-size: clamp(1rem, 1.8vw, 2rem);  
     line-height: 1.4;
-    overflow-wrap: anywhere;  
-      font-family: "Poppins", Arial, sans-serif;         
+    overflow-wrap: anywhere;         
 }
 
 .infocountCon {

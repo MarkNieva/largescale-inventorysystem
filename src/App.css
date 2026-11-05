@@ -18,5 +18,11 @@ h1{
   font-size: 70px;
 }
 
+a{
+    font-family: "Poppins", Arial, sans-serif;  
+      color: black;
+  background: transparent;
+  text-decoration: none;
+}
 
 
