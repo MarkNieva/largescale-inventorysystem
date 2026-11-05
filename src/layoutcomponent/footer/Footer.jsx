@@ -14,6 +14,7 @@ const Footer = ()=>{
 
             <div className={FooterSt.container}>
 
+              <div className={FooterSt.generalCon}>
                 {/* information */}
 
                 <div className={FooterSt.infoCon}>
@@ -22,11 +23,12 @@ const Footer = ()=>{
                     <div className={FooterSt.quicklinks}></div>
                     <div className={FooterSt.inventory}></div>
                     <div className={FooterSt.contact}></div>
-                    <img className={FooterSt.gradientwarehouse} src={warehousewaves}/>
-
 
                 </div>
 
+            <img className={FooterSt.gradientwarehouse} src={warehousewaves}/>
+
+             </div>
                 {/* copyright */}
 
                 <div className={FooterSt.copyrightCon}>
