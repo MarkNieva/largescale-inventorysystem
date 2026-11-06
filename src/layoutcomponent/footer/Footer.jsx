@@ -3,8 +3,17 @@ import FooterSt from '../footer/FooterSt.module.css';
 import warehousewaves from "../../assets/warehouse_waves.jpg";
 
 import { IoLogoAngular } from "react-icons/io";
+import { MdSupportAgent } from "react-icons/md";
+import { FaRegAddressCard,FaDiscord,FaFacebook,FaReddit    } from "react-icons/fa";
+import { FaCalendarDay,FaSquareXTwitter  } from "react-icons/fa6";
 
 const Footer = ()=>{
+
+
+    //functions-------
+
+
+    
 
 
     return(
@@ -25,17 +34,26 @@ const Footer = ()=>{
                         <IoLogoAngular size={50} />
                         <h2>website</h2>
                         </div>
-                   <a>Tracks thousands of Products across every warehouse get real-time stock updates, and never run out of what matters.</a>
+                     <a>Follow us for more Updates!</a>
                    
-                       <div className={FooterSt.socialIcon}></div>
+                       <div className={FooterSt.socialiconCon}>
+
+                        <div className={FooterSt.socialicon}><FaDiscord color="green" size={40}/></div>
+                        <div className={FooterSt.socialicon}><FaFacebook color="green" size={40}/></div>
+                        <div className={FooterSt.socialicon}><FaSquareXTwitter color="green" size={40}/></div>
+                        <div className={FooterSt.socialicon}><FaReddit color="green" size={40}/></div>
+
+                       </div>
+
+
                     </div>
 
                     <div className={FooterSt.quicklinks}>
                         <h2>Quick Links</h2>
                         <hr/>
-                        <a href = "#">Developer &ensp; {">"}</a>
-                        <a href = "#">Privacy Policy &ensp; {">"} </a>
-                        <a href = "#">Terms of Service &ensp; {">"} </a>
+                        <a href = "" >Developer &ensp; {">"}</a>
+                        <a href = "" >Privacy Policy &ensp; {">"} </a>
+                        <a href = "" >Terms of Service &ensp; {">"} </a>
                     </div>
 
                     <div className={FooterSt.inventory}>
@@ -48,9 +66,9 @@ const Footer = ()=>{
                     <div className={FooterSt.contact}>
                          <h2>Contact</h2>
                         <hr/>
-                        <h3 href = "#">support@website.com</h3>
-                        <h3 href = "#">General Trias, Cavite</h3>
-                        <h3 href = "#">Monday - Friday Support</h3>
+                        <div className={FooterSt.contactlogo}><MdSupportAgent color='green' size={30} /><h3 href = "#">support@website.com</h3></div>
+                        <div className={FooterSt.contactlogo}><FaRegAddressCard color='green' size={30} /><h3 href = "#">General Trias, Cavite</h3></div>
+                        <div className={FooterSt.contactlogo}><FaCalendarDay color='green' size={30} /><h3 href = "#">Monday - Friday Support</h3></div>
                     </div>
 
                 </div>

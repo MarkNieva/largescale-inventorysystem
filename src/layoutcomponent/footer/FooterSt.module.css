@@ -74,6 +74,36 @@ footer{
 
 }
 
+.socialiconCon{
+    display: flex;
+    column-gap: 20px;
+    width: auto;
+    height: 70px;
+}
+
+.socialicon{
+
+
+      width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: #aeebd0;
+    border: 1px solid green;
+   padding: 10px;
+    border-radius: 50px;
+     cursor: pointer;
+     transition: transform 0.3s ease-out;
+
+   
+}
+
+.socialicon:hover{
+
+transform: scale(1.2,1.2);
+background-color: #69c59d;
+}
+
 .logoCon{
       display: flex;
   text-align: center;
@@ -109,6 +139,13 @@ footer{
 .contact{
     width: 29%;
     height: 300px;
+}
+
+.contactlogo{
+    display: flex;
+    column-gap: 20px;
+    padding: 10px;
+    text-align: center;
 }
 
 

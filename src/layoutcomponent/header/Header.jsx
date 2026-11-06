@@ -24,7 +24,7 @@ const Header=()=>{
       <div className = {HeaderSt.headerCon}>
 
          {/* logo */}
-         <div className = {HeaderSt.logoCon}>
+         <div className = {HeaderSt.logoCon} onClick={()=>{console.log("Hello")}}>
             <IoLogoAngular size={50} />
             <h2>website</h2>
          </div>
