@@ -43,7 +43,7 @@ const StartupAnimation = ({ onComplete }) => {
 
         {/* Tagline */}
         <div className={`${StartupAnimationSt.tagline} ${stage >= 2 ? StartupAnimationSt.animateIn : ''}`}>
-          <h2>Skill issue! Git good</h2>
+          <h2>Inventory Start</h2>
           <div className={StartupAnimationSt.taglineUnderline}></div>
         </div>
 
@@ -52,7 +52,7 @@ const StartupAnimation = ({ onComplete }) => {
           <div className={StartupAnimationSt.loadingBar}>
             <div className={StartupAnimationSt.loadingProgress}></div>
           </div>
-          <p className={StartupAnimationSt.loadingText}>Initializing your Ass over here...</p>
+          <p className={StartupAnimationSt.loadingText}>Picking up your stock..........</p>
         </div>
       </div>
     </div>

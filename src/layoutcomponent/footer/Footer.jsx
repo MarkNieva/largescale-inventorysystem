@@ -13,8 +13,27 @@ const Footer = ()=>{
     //functions-------
 
 
-    
+    //social Icon
 
+
+    const socialIcondes=[
+        {icon:<FaDiscord color="green" size={40}/>},
+        {icon:<FaFacebook color="green" size={40}/>},
+        {icon:<FaSquareXTwitter color="green" size={40}/>},
+        {icon:<FaReddit color="green" size={40}/>}
+    ]
+
+    const quickLinksdes=[
+        {link:<a href = "#" >Developer &ensp; {">"}</a>},
+        {link: <a href = "#" >Privacy Policy &ensp; {">"} </a>},
+        {link:  <a href = "#" >Terms of Service &ensp; {">"} </a>}
+    ]
+
+    const inventorydes=[
+        {link: <a href = "#">Product Tracking &ensp; {">"}</a>},
+        {link: <a href = "#">Supplier Partner &ensp; {">"}</a>},
+        {link: <a href = "#">Reports &ensp; {">"}</a>}
+    ]
 
     return(
 
@@ -37,12 +56,9 @@ const Footer = ()=>{
                      <a>Follow us for more Updates!</a>
                    
                        <div className={FooterSt.socialiconCon}>
-
-                        <div className={FooterSt.socialicon}><FaDiscord color="green" size={40}/></div>
-                        <div className={FooterSt.socialicon}><FaFacebook color="green" size={40}/></div>
-                        <div className={FooterSt.socialicon}><FaSquareXTwitter color="green" size={40}/></div>
-                        <div className={FooterSt.socialicon}><FaReddit color="green" size={40}/></div>
-
+                        {socialIcondes.map((item)=>(    
+                      <div className={FooterSt.socialicon}>{item.icon}</div> 
+                        ))}
                        </div>
 
 
@@ -51,17 +67,29 @@ const Footer = ()=>{
                     <div className={FooterSt.quicklinks}>
                         <h2>Quick Links</h2>
                         <hr/>
-                        <a href = "" >Developer &ensp; {">"}</a>
+
+                        {quickLinksdes.map((item)=>(
+                            <>
+                         {item.link}
+                            </>
+                        ))}
+                        {/* <a href = "" >Developer &ensp; {">"}</a>
                         <a href = "" >Privacy Policy &ensp; {">"} </a>
-                        <a href = "" >Terms of Service &ensp; {">"} </a>
+                        <a href = "" >Terms of Service &ensp; {">"} </a> */}
                     </div>
 
                     <div className={FooterSt.inventory}>
                          <h2>Inventory</h2>
                         <hr/>
-                           <a href = "#">Product Tracking &ensp; {">"}</a>
+
+                        {inventorydes.map((item)=>(
+                            <>
+                            {item.link}
+                            </>
+                        ))}
+                           {/* <a href = "#">Product Tracking &ensp; {">"}</a>
                         <a href = "#">Supplier Partner &ensp; {">"}</a>
-                        <a href = "#">Reports &ensp; {">"}</a>
+                        <a href = "#">Reports &ensp; {">"}</a> */}
                     </div>
                     <div className={FooterSt.contact}>
                          <h2>Contact</h2>
