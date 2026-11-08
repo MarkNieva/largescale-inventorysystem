@@ -1,3 +1,7 @@
+import { useContext  } from "react";
+import { MyContext } from "../../components/MyContext";
+import {useNavigate} from 'react-router-dom'
+
 import FooterSt from '../footer/FooterSt.module.css';
 
 import warehousewaves from "../../assets/warehouse_waves.jpg";
@@ -11,8 +15,9 @@ const Footer = ()=>{
 
 
     //functions-------
+ const { setheaderToggle } = useContext(MyContext);
 
-
+    const navigator = useNavigate();
     //social Icon
 
 
@@ -23,17 +28,20 @@ const Footer = ()=>{
         {icon:<FaReddit color="green" size={40}/>}
     ]
 
+     
     const quickLinksdes=[
-        {link:<a href = "#" >Developer &ensp; {">"}</a>},
-        {link: <a href = "#" >Privacy Policy &ensp; {">"} </a>},
-        {link:  <a href = "#" >Terms of Service &ensp; {">"} </a>}
+        {link:<a href = "" >Developer &ensp; {">"}</a>,action:(e)=>{ setheaderToggle(false) ,e.preventDefault(),navigator("/developer")}},
+        {link: <a href = "" >Privacy Policy &ensp; {">"} </a>,action:(e)=>{ setheaderToggle(false) ,e.preventDefault(),navigator("/developer")} },
+        {link:  <a href = "" >Terms of Service &ensp; {">"} </a>,action:(e)=>{ setheaderToggle(false) ,e.preventDefault(),navigator("/developer")}}
     ]
 
     const inventorydes=[
-        {link: <a href = "#">Product Tracking &ensp; {">"}</a>},
-        {link: <a href = "#">Supplier Partner &ensp; {">"}</a>},
-        {link: <a href = "#">Reports &ensp; {">"}</a>}
+        {link: <a href = "#">Product Tracking &ensp; {">"}</a>,action:(e)=>{ setheaderToggle(false) ,e.preventDefault(),navigator("/developer")}},
+        {link: <a href = "#">Supplier Partner &ensp; {">"}</a>,action:(e)=>{ setheaderToggle(false) ,e.preventDefault(),navigator("/developer")}},
+        {link: <a href = "#">Reports &ensp; {">"}</a>,action:(e)=>{ setheaderToggle(false) ,e.preventDefault(),navigator("/developer")}}
     ]
+
+    
 
     return(
 
@@ -58,6 +66,7 @@ const Footer = ()=>{
                        <div className={FooterSt.socialiconCon}>
                         {socialIcondes.map((item)=>(    
                       <div className={FooterSt.socialicon}>{item.icon}</div> 
+
                         ))}
                        </div>
 
@@ -70,12 +79,9 @@ const Footer = ()=>{
 
                         {quickLinksdes.map((item)=>(
                             <>
-                         {item.link}
+                         <span onClick={item.action}>{item.link}</span>
                             </>
                         ))}
-                        {/* <a href = "" >Developer &ensp; {">"}</a>
-                        <a href = "" >Privacy Policy &ensp; {">"} </a>
-                        <a href = "" >Terms of Service &ensp; {">"} </a> */}
                     </div>
 
                     <div className={FooterSt.inventory}>
@@ -87,9 +93,6 @@ const Footer = ()=>{
                             {item.link}
                             </>
                         ))}
-                           {/* <a href = "#">Product Tracking &ensp; {">"}</a>
-                        <a href = "#">Supplier Partner &ensp; {">"}</a>
-                        <a href = "#">Reports &ensp; {">"}</a> */}
                     </div>
                     <div className={FooterSt.contact}>
                          <h2>Contact</h2>
