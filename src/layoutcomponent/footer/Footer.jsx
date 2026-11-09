@@ -22,10 +22,10 @@ const Footer = ()=>{
 
 
     const socialIcondes=[
-        {icon:<FaDiscord color="green" size={40}/>},
-        {icon:<FaFacebook color="green" size={40}/>},
-        {icon:<FaSquareXTwitter color="green" size={40}/>},
-        {icon:<FaReddit color="green" size={40}/>}
+        {icon:<a href = "https://discord.com"><FaDiscord color="green" size={40} /></a>},
+        {icon:<a href = "https://www.facebook.com"><FaFacebook color="green" size={40}/></a>},
+        {icon:<a href = "#"><FaSquareXTwitter color="green" size={40}/></a>},
+        {icon:<a href = "#"><FaReddit color="green" size={40}/></a>}
     ]
 
      
