@@ -30,15 +30,15 @@ const Footer = ()=>{
 
      
     const quickLinksdes=[
-        {link:<a href = "" >Developer &ensp; {">"}</a>,action:(e)=>{ setheaderToggle(false) ,e.preventDefault(),navigator("/developer")}},
-        {link: <a href = "" >Privacy Policy &ensp; {">"} </a>,action:(e)=>{ setheaderToggle(false) ,e.preventDefault(),navigator("/developer")} },
-        {link:  <a href = "" >Terms of Service &ensp; {">"} </a>,action:(e)=>{ setheaderToggle(false) ,e.preventDefault(),navigator("/developer")}}
+        {link:<a href = "" >Developer &ensp; {">"}</a>,action:(e)=>{ setheaderToggle("headerforinfo") ,e.preventDefault(),navigator("/developer")}},
+        {link: <a href = "" >Privacy Policy &ensp; {">"} </a>,action:(e)=>{ setheaderToggle("headerforinfo") ,e.preventDefault(),navigator("/developer")} },
+        {link:  <a href = "" >Terms of Service &ensp; {">"} </a>,action:(e)=>{ setheaderToggle("headerforinfo") ,e.preventDefault(),navigator("/developer")}}
     ]
 
     const inventorydes=[
-        {link: <a href = "#">Product Tracking &ensp; {">"}</a>,action:(e)=>{ setheaderToggle(false) ,e.preventDefault(),navigator("/developer")}},
-        {link: <a href = "#">Supplier Partner &ensp; {">"}</a>,action:(e)=>{ setheaderToggle(false) ,e.preventDefault(),navigator("/developer")}},
-        {link: <a href = "#">Reports &ensp; {">"}</a>,action:(e)=>{ setheaderToggle(false) ,e.preventDefault(),navigator("/developer")}}
+        {link: <a href = "#">Product Tracking &ensp; {">"}</a>,action:(e)=>{ setheaderToggle("headerforinfo") ,e.preventDefault(),navigator("/developer")}},
+        {link: <a href = "#">Supplier Partner &ensp; {">"}</a>,action:(e)=>{ setheaderToggle("headerforinfo") ,e.preventDefault(),navigator("/developer")}},
+        {link: <a href = "#">Reports &ensp; {">"}</a>,action:(e)=>{ setheaderToggle("headerforinfo") ,e.preventDefault(),navigator("/developer")}}
     ]
 
     

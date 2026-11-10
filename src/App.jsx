@@ -7,6 +7,7 @@ import StartupAnimation from "./components/loadingscreen/StartupAnimation";
 
 import Footer from './layoutcomponent/footer/Footer.jsx'
 import Header from './layoutcomponent/header/Header.jsx'
+import Headerforinfo from "./layoutcomponent/header/headerforinfo/Headerforinfo.jsx";
 
 
 function App() {
@@ -36,8 +37,10 @@ function App() {
 
 
     {/* header */}
-   {headerToggle ?
-   <Header/>
+   {headerToggle === "landingheader"?
+   <Header/> 
+   : headerToggle === "headerforinfo" ?
+   <Headerforinfo/>
         :
     <></>
    }

@@ -7,7 +7,7 @@ export function MyProvider({ children }) {
 
   //header toggle
 
-  const [headerToggle,setheaderToggle]=useState(true);
+  const [headerToggle,setheaderToggle]=useState("landingheader");
   
   const [sidebarToggle,setsidebarToggle]=useState(false);
 

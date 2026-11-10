@@ -6,7 +6,6 @@
 
     width: 99.9%;
     height:auto;
-    display: flex;
     justify-content: center;
     column-gap: 20px;
     padding-top: 40px;
@@ -17,17 +16,25 @@
     background-position: center center; 
 }
 
+.firstIntroCon{
+    display: flex;
+        column-gap: 20px;
+      flex-direction: row;
+}
+
 .profileinfoCon{
     width: 47%;   
-    height: 400px;
+    height: auto;
     padding: 20px;
-    border: 1px solid rgb(15, 77, 53);
+    border: 2px solid rgb(122, 172, 157);
     border-radius: 10px;
     display: flex;
     text-align: center;
     flex-direction: column;
     row-gap: 20px;
-    background: rgba(231, 238, 231, 0.7)
+    background: rgba(231, 238, 231, 0.6);
+    
+    
     
 }
 
@@ -83,14 +90,61 @@ background-color: #69c59d;
 
 
 .bioinfoCon{
-      width: 45%;       
-    height: 400px;
+    width: 45%;   
+    height: auto;
     padding: 20px;
-    border: 1px solid black;
-      background-color: rgb(216, 241, 216);
+    border: 2px solid rgb(122, 172, 157);
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    justify-content: center;
+    background: rgba(231, 238, 231, 0.6);
 }
+
+.bioinfo{
+    width: 95%;
+    height: auto;
+    padding: 20px;
+     border: 2px solid rgb(122, 172, 157);
+     background: rgba(231, 238, 231, 0.8);
+     border-radius: 10px;
+}
+
 
 .bioinfoCon h2{
      font-size: 40px;
+}
+
+.skillsCon{
+    width: 95%;
+    height: auto;
+    padding: 20px;
+     display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+     border: 2px solid rgb(122, 172, 157);
+     background: rgba(231, 238, 231, 0.8);
+     border-radius: 10px;
+}
+
+.skillsBoxCon{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skillBox{
+    width: auto;
+    height: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    border-radius: 10px;
+    background-color: rgb(157, 211, 157);
+    border: 2px solid rgb(155, 170, 155);
 }

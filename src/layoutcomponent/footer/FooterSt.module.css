@@ -77,8 +77,10 @@ footer{
 .socialiconCon{
     display: flex;
     column-gap: 20px;
+    row-gap: 20px;
     width: auto;
     height: 70px;
+    flex-wrap: wrap;
 }
 
 .socialicon{
@@ -186,7 +188,7 @@ background-color: #69c59d;
     margin-right: 30px;
 }
 
-@media (max-width: 936px) {
+@media (max-width: 1036px) {
 
 
     .generalCon{
