@@ -1,0 +1,28 @@
+.headerforinfoCon{
+  display: flex;
+  width: 100%;
+  max-width: 1100px; 
+  margin: 0 auto;          
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;  
+  height: 40px;
+  border-radius: 10px;
+  background: rgba(231, 238, 231, 0.8);
+      backdrop-filter: blur(4px);
+   border: 2px solid rgb(122, 172, 157);
+   justify-content: space-between;
+
+}
+
+.headertextCon{
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+}
+
+
+.headertextCon h2{
+    font-size: 30px;
+}
