@@ -1,6 +1,12 @@
 import HeaderforinfoSt from '../headerforinfo/HeaderforinfoSt.module.css';
+import { useContext  } from "react";
+import { MyContext } from "../../../components/MyContext";
+
 
 const Headerforinfo=()=>{
+
+     const { headerforInfoHeadtext } = useContext(MyContext);
+    const { headerforInfoSubtext } = useContext(MyContext);
 
 return(
 
@@ -10,8 +16,8 @@ return(
     <div className={HeaderforinfoSt.headerforinfoCon}>
 
        <div className={HeaderforinfoSt.headertextCon}>
-        <h2>Developer</h2>
-        <a>Developer information and Achievements</a>
+        <h2>{headerforInfoHeadtext}</h2>
+        <a>{headerforInfoSubtext}</a>
        </div>
 
     </div>

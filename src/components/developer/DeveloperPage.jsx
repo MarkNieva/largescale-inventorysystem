@@ -40,14 +40,67 @@ const DeveloperPage=()=>{
         {skill:  <div className={DeveloperPageSt.skillBox}><TbBrandMysql size={25}/><a>MySQL</a></div>},
         {skill:  <div className={DeveloperPageSt.skillBox}><FaGithub size={25}/><a>Github</a></div>},
         {skill:  <div className={DeveloperPageSt.skillBox}><BsTypescript size={25}/><a>TypeScript</a></div>},
+        {skill:  <div className={DeveloperPageSt.skillBox}><BsTypescript size={25}/><a>Hardware and Software Troubleshooting</a></div>},
+        {skill:  <div className={DeveloperPageSt.skillBox}><BsTypescript size={25}/><a>Technical Documentation and Ticket Management</a></div>},
+        {skill:  <div className={DeveloperPageSt.skillBox}><BsTypescript size={25}/><a>	Hardware Diagnostics and Component Assessment</a></div>},
+        {skill:  <div className={DeveloperPageSt.skillBox}><BsTypescript size={25}/><a>Microsoft 365 Application Support</a></div>},
+        {skill:  <div className={DeveloperPageSt.skillBox}><BsTypescript size={25}/><a>	Workstation Deployment and Configuration</a></div>},
+        {skill:  <div className={DeveloperPageSt.skillBox}><BsTypescript size={25}/><a>	Operating System Installation and Configuration</a></div>},
+        {skill:  <div className={DeveloperPageSt.skillBox}><BsTypescript size={25}/><a>	IT Service Request and Incident Management</a></div>},
 
+     ]
+
+     const expertise=[
+        {expertise:   <div className={DeveloperPageSt.careerskill}>
+              <div className={DeveloperPageSt.careerskillsub}>
+                  <h2>Frontend Development</h2>
+                <div className={DeveloperPageSt.careerskillList}>
+                {skills[0].skill}              {skills[5].skill}              {skills[6].skill}   {skills[7].skill}             
+                </div>
+              </div>
+
+               <div className={DeveloperPageSt.textcareerskill}>
+              <p>Buildy Build build</p>
+              </div>
+
+            </div>
+        },
+         {expertise:   <div className={DeveloperPageSt.careerskill}>
+              <div className={DeveloperPageSt.careerskillsub}>
+                  <h2>Backend Development</h2>
+                <div className={DeveloperPageSt.careerskillList}>
+                {skills[9].skill}              {skills[10].skill}              {skills[11].skill}             
+                </div>
+              </div>
+
+              <div className={DeveloperPageSt.textcareerskill}>
+              <p>Buildy Build Back</p>
+              </div>
+
+            </div>
+        },
+
+         {expertise:   <div className={DeveloperPageSt.careerskill}>
+              <div className={DeveloperPageSt.careerskillsub}>
+                  <h2>Technical Support</h2>
+                <div className={DeveloperPageSt.careerskillList}>
+                {skills[14].skill}                          
+                </div>
+              </div>
+
+              <div className={DeveloperPageSt.textcareerskill}>
+              <p>Buildy Build Back</p>
+              </div>
+
+            </div>
+        }
      ]
 
     return(
         <>
 
        <div className={DeveloperPageSt.container}>
-
+{/* overview */}
 <div  className={DeveloperPageSt.firstIntroCon }>
         <div className={DeveloperPageSt.profileinfoCon}>
 
@@ -105,6 +158,39 @@ const DeveloperPage=()=>{
 
 
         </div>
+        </div>
+
+        {/* careers */}
+        <div className={DeveloperPageSt.careerCon}>
+
+        <div className={DeveloperPageSt.careerskillCon}>
+
+            <h2>Area of Expertise</h2>
+
+            {expertise.map((item)=>(
+                <>
+                {item.expertise}
+                </>
+            ))}
+            {/* <div className={DeveloperPageSt.careerskill}>
+              <div className={DeveloperPageSt.careerskillsub}>
+                  <h2>Frontend Development</h2>
+                <div className={DeveloperPageSt.careerskillList}>
+                {skills[0].skill}              {skills[0].skill}              {skills[0].skill}             
+                </div>
+              </div>
+              <p>fdssdfdsfdsfsfsfsfdsfdsfdsfdsfdsff</p>
+            </div> */}
+
+        </div>
+
+        <div className={DeveloperPageSt.careertimelineCon}>
+
+
+
+        </div>
+
+
         </div>
 
        </div>

@@ -15,11 +15,18 @@ const Footer = ()=>{
 
 
     //functions-------
+
+    //context storage
  const { setheaderToggle } = useContext(MyContext);
+ const { setheaderforInfoHeadtext } = useContext(MyContext);
+const { setheaderforInfoSubtext } = useContext(MyContext);
 
-    const navigator = useNavigate();
-    //social Icon
+   //navigator
+   const navigator = useNavigate();
 
+
+
+    //social Icon (clickable external links)
 
     const socialIcondes=[
         {icon:<a href = "https://discord.com"><FaDiscord color="green" size={40} /></a>},
@@ -28,17 +35,46 @@ const Footer = ()=>{
         {icon:<a href = "#"><FaReddit color="green" size={40}/></a>}
     ]
 
-     
+
+    const redirectorFunc=(e,redirectlink)=>{
+        e.preventDefault();
+        setheaderToggle("headerforinfo")
+    //    sessionStorage.setItem()
+
+         switch(redirectlink){
+
+            case "developer":
+            setheaderforInfoHeadtext("Developer")
+            setheaderforInfoSubtext("Developer information and Achievements")
+            // sessionStorage.setItem("headerheadinfotext","Developer")
+            // sessionStorage.setItem("headersubinfotext","Developer information and Achievements")
+            navigator("/developer")
+            
+            break
+
+            default:
+
+            setheaderforInfoHeadtext("Nulling")
+            setheaderforInfoSubtext("Null")
+            console.log("error Redirecting Link")
+
+
+         }
+
+
+    }
+
+     //rendering links with function
     const quickLinksdes=[
-        {link:<a href = "" >Developer &ensp; {">"}</a>,action:(e)=>{ setheaderToggle("headerforinfo") ,e.preventDefault(),navigator("/developer")}},
-        {link: <a href = "" >Privacy Policy &ensp; {">"} </a>,action:(e)=>{ setheaderToggle("headerforinfo") ,e.preventDefault(),navigator("/developer")} },
-        {link:  <a href = "" >Terms of Service &ensp; {">"} </a>,action:(e)=>{ setheaderToggle("headerforinfo") ,e.preventDefault(),navigator("/developer")}}
+        {link:<a href = "" >Developer &ensp; {">"}</a>,action:(e)=>redirectorFunc(e,"developer")},
+        {link: <a href = "" >Privacy Policy &ensp; {">"} </a>,action:(e)=>redirectorFunc(e,"privacy")},
+        {link:  <a href = "" >Terms of Service &ensp; {">"} </a>,action:(e)=>redirectorFunc(e,"termservice")}
     ]
 
     const inventorydes=[
-        {link: <a href = "#">Product Tracking &ensp; {">"}</a>,action:(e)=>{ setheaderToggle("headerforinfo") ,e.preventDefault(),navigator("/developer")}},
-        {link: <a href = "#">Supplier Partner &ensp; {">"}</a>,action:(e)=>{ setheaderToggle("headerforinfo") ,e.preventDefault(),navigator("/developer")}},
-        {link: <a href = "#">Reports &ensp; {">"}</a>,action:(e)=>{ setheaderToggle("headerforinfo") ,e.preventDefault(),navigator("/developer")}}
+        {link: <a href = "#">Product Tracking &ensp; {">"}</a>,action:(e)=>redirectorFunc(e,"producttrack")},
+        {link: <a href = "#">Supplier Partner &ensp; {">"}</a>,action:(e)=>redirectorFunc(e,"supplierpartner")},
+        {link: <a href = "#">Reports &ensp; {">"}</a>,action:(e)=>redirectorFunc(e,"reports")}
     ]
 
     

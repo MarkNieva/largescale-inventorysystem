@@ -8,6 +8,11 @@ export function MyProvider({ children }) {
   //header toggle
 
   const [headerToggle,setheaderToggle]=useState("landingheader");
+
+  //headerforinfotext
+
+  const [headerforInfoHeadtext,setheaderforInfoHeadtext]=useState("Nulling");
+  const [headerforInfoSubtext,setheaderforInfoSubtext]=useState("Null");
   
   const [sidebarToggle,setsidebarToggle]=useState(false);
 
@@ -19,8 +24,9 @@ export function MyProvider({ children }) {
       value, setValue,
       headerToggle,setheaderToggle,
       sidebarToggle,setsidebarToggle,
-      profileActive,setprofileActive
-
+      profileActive,setprofileActive,
+      headerforInfoHeadtext,setheaderforInfoHeadtext,
+      headerforInfoSubtext,setheaderforInfoSubtext
     }}>
       {children}
     </MyContext.Provider>
