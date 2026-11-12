@@ -46,8 +46,6 @@ const { setheaderforInfoSubtext } = useContext(MyContext);
             case "developer":
             setheaderforInfoHeadtext("Developer")
             setheaderforInfoSubtext("Developer information and Achievements")
-            // sessionStorage.setItem("headerheadinfotext","Developer")
-            // sessionStorage.setItem("headersubinfotext","Developer information and Achievements")
             navigator("/developer")
             
             break
