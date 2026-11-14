@@ -39,7 +39,6 @@ const { setheaderforInfoSubtext } = useContext(MyContext);
     const redirectorFunc=(e,redirectlink)=>{
         e.preventDefault();
         setheaderToggle("headerforinfo")
-    //    sessionStorage.setItem()
 
          switch(redirectlink){
 
