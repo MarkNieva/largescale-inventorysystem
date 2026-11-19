@@ -46,8 +46,6 @@ const { setheaderforInfoSubtext } = useContext(MyContext);
             setheaderforInfoHeadtext("Developer")
             setheaderforInfoSubtext("Developer information and Achievements")
             navigator("/developer")
-            
-            //fsfsdfdsfsdf
             break
 
             default:
