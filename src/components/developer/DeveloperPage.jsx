@@ -10,7 +10,7 @@ import { SiDjango,SiMongodb } from "react-icons/si";
 import { IoLogoJavascript,IoLogoFirebase  } from "react-icons/io5";
 import { BsTypescript } from "react-icons/bs";
 
-import inventoryIcon from "../../assets/inventoryicon.png";
+
 import ResumeFile from "../../assets/pdfFiles/MarkNieva_Resume.pdf";
 
 import DeveloperPageSt from '../developer/DeveloperPageSt.module.css';
@@ -51,6 +51,45 @@ const DeveloperPage=()=>{
         {skill:  <div className={DeveloperPageSt.skillBox}><BsTypescript size={25}/><a>	Operating System Installation and Configuration</a></div>},
         {skill:  <div className={DeveloperPageSt.skillBox}><BsTypescript size={25}/><a>	IT Service Request and Incident Management</a></div>},
 
+     ]
+
+     const achievements=[
+      {achieve: <div className={DeveloperPageSt.achievementBoxCon}>
+
+          <div className={DeveloperPageSt.achievement}>
+            <BsTypescript size={40} />
+          </div>
+          <div className={DeveloperPageSt.achievementText}>
+            <a>5</a>
+            <a>Projects</a>
+            </div>
+
+        </div>
+    },
+    {achieve: <div className={DeveloperPageSt.achievementBoxCon}>
+
+          <div className={DeveloperPageSt.achievement}>
+            <BsTypescript size={40} />
+          </div>
+          <div className={DeveloperPageSt.achievementText}>
+            <a>2</a>
+            <a>Certifications</a>
+            </div>
+
+        </div>
+    },
+    {achieve: <div className={DeveloperPageSt.achievementBoxCon}>
+
+          <div className={DeveloperPageSt.achievement}>
+            <BsTypescript size={40} />
+          </div>
+          <div className={DeveloperPageSt.achievementText}>
+            <a>{"<"}1</a>
+            <a>Years Experience</a>
+            </div>
+
+        </div>
+    }
      ]
 
      const expertise=[
@@ -137,20 +176,30 @@ const DeveloperPage=()=>{
 
     <div className={DeveloperPageSt.showcaseCon}>
 
-      <img src={inventoryIcon}/>
+      <img src="https://i.pinimg.com/736x/18/a3/4c/18a34cda7690f6b59b026a2e481ddbb7.jpg"/>
 
       <div className={DeveloperPageSt.pdfManageCon}>
         <a href={ResumeFile}
          target="_blank"
         rel="noopener noreferrer">View PDF</a>
 
-        <a
+      <a
      href={ResumeFile}
      download="MarkNieva_Resume.pdf"
         >Download PDF</a>
       </div>
 
       <div className={DeveloperPageSt.achievementCon}>
+
+
+        {achievements.map((item)=>(
+
+          <>
+          
+          {item.achieve}
+
+          </>
+        ))}
 
       </div>
 
@@ -196,15 +245,7 @@ const DeveloperPage=()=>{
                 {item.expertise}
                 </>
             ))}
-            {/* <div className={DeveloperPageSt.careerskill}>
-              <div className={DeveloperPageSt.careerskillsub}>
-                  <h2>Frontend Development</h2>
-                <div className={DeveloperPageSt.careerskillList}>
-                {skills[0].skill}              {skills[0].skill}              {skills[0].skill}             
-                </div>
-              </div>
-              <p>fdssdfdsfdsfsfsfsfdsfdsfdsfdsfdsff</p>
-            </div> */}
+           
 
         </div>
 

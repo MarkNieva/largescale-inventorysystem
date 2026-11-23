@@ -9,11 +9,11 @@
     justify-content: center;
     column-gap: 20px;
     padding-top: 120px;
-    border: 1px solid black;
     background-image: url('../../assets/warehousepic.jpg');
       background-size: cover; 
     background-repeat: no-repeat; 
     background-position: center center; 
+  
 }
 
 .firstIntroCon{
@@ -90,27 +90,26 @@ background-color: #69c59d;
 
 .showcaseCon{
     width: 100%;
-    height: 500px;
+    height: auto;
     padding-top: 20px;
-    border: 1px solid black;
     justify-content: center;
     align-items: center;
     text-align: center;
     display: flex;
     column-gap: 20px;
+    flex-wrap: wrap;
 }
 
 .showcaseCon img{
     width: 190px;
     height: 190px;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 20px;
 }
 
 .pdfManageCon{
     width: auto;
     height: auto;
-    border: 1px solid black;
      display: flex;
     flex-direction: column;
     row-gap: 20px;
@@ -126,6 +125,44 @@ background-color: #69c59d;
    cursor: pointer;
 }
 
+.achievementCon{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.achievementBoxCon{
+
+    width: 200px;
+    border: 2px solid green;
+    border-radius: 20px;
+    background-color: white;
+    padding: 10px;
+    justify-content: center;
+    display: flex;
+    column-gap: 40px;
+
+}
+
+.achievement{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+
+}
+
+.achievementText{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.achievementText a:first-child{
+   font-size: 30px;
+   font-weight: bold;
+}
 
 
 .bioinfoCon{
