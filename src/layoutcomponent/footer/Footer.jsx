@@ -46,11 +46,35 @@ const { setheaderforInfoSubtext } = useContext(MyContext);
             setheaderforInfoHeadtext("Developer")
             setheaderforInfoSubtext("Developer information and Achievements")
             navigator("/developer")
-            //wwwww
+            break
+
+            case "privacy":
+            setheaderforInfoHeadtext("Privacy Policy")
+            setheaderforInfoSubtext("Developer information and Achievements")
+            break
+
+            case "termservice":
+            setheaderforInfoHeadtext("Terms of Service")
+            setheaderforInfoSubtext("Developer information and Achievements")
+            break
+
+            case "producttrack":
+            setheaderforInfoHeadtext("Product Tracking")
+            setheaderforInfoSubtext("Developer information and Achievements")
+            break
+
+            case "supplierpartner":
+            setheaderforInfoHeadtext("Supplier Partner")
+            setheaderforInfoSubtext("Developer information and Achievements")
+            break
+
+            case "reports":
+            setheaderforInfoHeadtext("Reports")
+            setheaderforInfoSubtext("Developer information and Achievements")
             break
 
             default:
-                //hello
+                //err
             setheaderforInfoHeadtext("Nulling")
             setheaderforInfoSubtext("Null")
             console.log("error Redirecting Link")
@@ -69,9 +93,9 @@ const { setheaderforInfoSubtext } = useContext(MyContext);
     ]
 
     const inventorydes=[
-        {link: <a href = "#">Product Tracking &ensp; {">"}</a>,action:(e)=>redirectorFunc(e,"producttrack")},
-        {link: <a href = "#">Supplier Partner &ensp; {">"}</a>,action:(e)=>redirectorFunc(e,"supplierpartner")},
-        {link: <a href = "#">Reports &ensp; {">"}</a>,action:(e)=>redirectorFunc(e,"reports")}
+        {link: <a href = "">Product Tracking &ensp; {">"}</a>,action:(e)=>redirectorFunc(e,"producttrack")},
+        {link: <a href = "">Supplier Partner &ensp; {">"}</a>,action:(e)=>redirectorFunc(e,"supplierpartner")},
+        {link: <a href = "">Reports &ensp; {">"}</a>,action:(e)=>redirectorFunc(e,"reports")}
     ]
 
     

@@ -6,6 +6,8 @@ import inventoryIcon from "../../assets/inventoryicon.png";
 import { BsPersonCircle } from "react-icons/bs";
 import { AiOutlineMessage } from "react-icons/ai";
 
+
+
 const LandingPage=()=>{
 
   const infoPerformance=[{
@@ -19,6 +21,8 @@ const LandingPage=()=>{
     infoCount:200
   }
 ]
+
+
 
     return(
         <>

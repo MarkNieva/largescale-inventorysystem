@@ -10,6 +10,9 @@ import { SiDjango,SiMongodb } from "react-icons/si";
 import { IoLogoJavascript,IoLogoFirebase  } from "react-icons/io5";
 import { BsTypescript } from "react-icons/bs";
 
+import inventoryIcon from "../../assets/inventoryicon.png";
+import ResumeFile from "../../assets/pdfFiles/MarkNieva_Resume.pdf";
+
 import DeveloperPageSt from '../developer/DeveloperPageSt.module.css';
 const DeveloperPage=()=>{
 
@@ -132,6 +135,27 @@ const DeveloperPage=()=>{
      ))}
     </div>
 
+    <div className={DeveloperPageSt.showcaseCon}>
+
+      <img src={inventoryIcon}/>
+
+      <div className={DeveloperPageSt.pdfManageCon}>
+        <a href={ResumeFile}
+         target="_blank"
+        rel="noopener noreferrer">View PDF</a>
+
+        <a
+     href={ResumeFile}
+     download="MarkNieva_Resume.pdf"
+        >Download PDF</a>
+      </div>
+
+      <div className={DeveloperPageSt.achievementCon}>
+
+      </div>
+
+
+    </div>
       
 
         </div>
