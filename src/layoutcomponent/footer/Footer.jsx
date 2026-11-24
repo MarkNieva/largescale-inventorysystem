@@ -4,12 +4,14 @@ import {useNavigate} from 'react-router-dom'
 
 import FooterSt from '../footer/FooterSt.module.css';
 
+
 import warehousewaves from "../../assets/warehouse_waves.jpg";
 
 import { IoLogoAngular } from "react-icons/io";
 import { MdSupportAgent } from "react-icons/md";
 import { FaRegAddressCard,FaDiscord,FaFacebook,FaReddit    } from "react-icons/fa";
 import { FaCalendarDay,FaSquareXTwitter  } from "react-icons/fa6";
+
 
 const Footer = ()=>{
 
@@ -37,8 +39,11 @@ const { setheaderforInfoSubtext } = useContext(MyContext);
 
 
     const redirectorFunc=(e,redirectlink)=>{
+        
         e.preventDefault();
         setheaderToggle("headerforinfo")
+        window.scrollTo({ top: 0, behavior: "smooth" })
+        
 
          switch(redirectlink){
 
@@ -98,7 +103,8 @@ const { setheaderforInfoSubtext } = useContext(MyContext);
         {link: <a href = "">Reports &ensp; {">"}</a>,action:(e)=>redirectorFunc(e,"reports")}
     ]
 
-    
+
+
 
     return(
 
@@ -147,7 +153,7 @@ const { setheaderforInfoSubtext } = useContext(MyContext);
 
                         {inventorydes.map((item)=>(
                             <>
-                            {item.link}
+                          <span onClick={item.action}>{item.link}</span>
                             </>
                         ))}
                     </div>

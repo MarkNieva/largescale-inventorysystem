@@ -251,6 +251,26 @@ const DeveloperPage=()=>{
 
         <div className={DeveloperPageSt.careertimelineCon}>
 
+          <h1>Career Timeline</h1>
+
+          <h2>2022-2026</h2>
+          <span>
+            <a>National University - Mall of Asia as a Student</a>
+            <p>Completed BS in Information Technology Major in Mobile and Web Applications</p>
+            </span>
+
+          <h2>2022-2026</h2>
+          <span>
+            <a>National University - Mall of Asia as a Student</a>
+            <p>Completed BS in Information Technology Major in Mobile and Web Applications</p>
+            </span>
+
+          <h2>Present</h2>
+          <span>
+            <a>Looking for Opportunity</a>
+            <p>Actively Looking for opportunity specializing in technical support, Service Desk and Junior Web Development</p>
+            </span>
+          
 
 
         </div>
